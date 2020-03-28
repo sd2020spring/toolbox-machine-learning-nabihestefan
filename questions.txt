@@ -1,0 +1,19 @@
+Questions
+1. What is the general trend in the curve?
+	
+The general trend of the curve is a growing line, the bigger the train dataset, the more accurate the program is at identifying the test dataset.
+
+
+2. Are there parts of the curve that appear to be noisier than others? Why?
+
+There are, I expect them to be the later ones. Since there is less items on teh test dataset, one mistake more and one mistake less change the percentage drastically, this means that the changes are more noticeable, and thus, the curve is "noisier".
+
+
+3. How many trials do you need to get a smooth curve?
+
+Aroudn 150
+
+
+4. Try different values for C (by changing LogisticRegression(C=10** -10)). What happens? If you want to know why this happens, see this Wikipedia page as well as the documentation for LogisticRegression in scikit-learn.
+
+If I make C bigger, it becomes less standardized, if I make it smaller, it becomes more standardized because it is less regularized
